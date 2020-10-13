@@ -11,8 +11,10 @@ using Microsoft.Extensions.Hosting;
 
 namespace FlashFlyers
 {
+    //This class "configures services and the app's request pipeline"
     public class Startup
     {
+        //Class constructor
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -41,6 +43,7 @@ namespace FlashFlyers
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
